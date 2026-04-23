@@ -49,7 +49,7 @@ Com essas descrições, podemos alinhar e combinar as imagens ou criar um modelo
 ## Conclusão
 Veremos diferentes algoritmos do OpenCV para detectar, descrever e corresponder características nas imagens.
 
-Fonte: https://docs.opencv.org/3.4/db/d27/tutorial_py_table_of_contents_feature2d.html
+Fonte: https://docs.opencv.org/3.4/df/d54/tutorial_py_features_meaning.html
 
 ## Questões
 **1) O que é uma característica (ou ponto chave)**
