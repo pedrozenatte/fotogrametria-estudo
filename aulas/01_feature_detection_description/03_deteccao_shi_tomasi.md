@@ -66,3 +66,6 @@ $$
 $$
 
 ![25 Cantos Melhores](../../imagens/ncantos_melhores.jpeg)
+
+#### Fonte:
+Link: https://docs.opencv.org/3.4/d4/d8c/tutorial_py_shi_tomasi.html

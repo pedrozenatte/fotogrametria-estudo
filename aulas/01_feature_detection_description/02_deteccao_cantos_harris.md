@@ -167,3 +167,6 @@ cv.imwrite('subpixel5.png',img)
 ## Perguntas
 **1) Por que a escala cinza é melhor?**
 Por possuir menos informação, pois assim, além de aumentarmos a eficiência computacional, teremos melhores padrões de intensidade (ao invés de analisar 3 canais RGB, analisaremos apenas 1 canal B) e menos ruído. 
+
+#### Fonte: 
+Link: https://docs.opencv.org/3.4/dc/d0d/tutorial_py_features_harris.html

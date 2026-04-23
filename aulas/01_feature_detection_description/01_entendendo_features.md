@@ -42,8 +42,6 @@ Agora que sabemos o que são essas características, surge a próxima pergunta: 
 Procuramos regiões da imagem que tenham a maior variação quando movidas. Este processo é chamado de **Feature Detection (Detecção de Características)**. 
 Uma vez encontradas as características, o próximo passo é poder encontrá-las em outras imagens. Dessa forma, para fazer isso, descrevemos essas características com palavras, como "a parte superior é céu azul", para encontrá-las em outras imagens. Esse processo é conhecido como **Feature Description (Descrição de Características)**.
 
-Uma vez encontradas as características, o próximo passo é poder encontrá-las em outras imagens. Como fazemos isso? Podemos pegar uma região ao redor da característica e descrevê-la com palavras, como "a parte superior é céu azul, a parte inferior é um prédio com vidro, etc.", e procurar essa mesma área nas outras imagens. Um computador também pode descrever a região ao redor de uma característica para poder encontrá-la em outras imagens. Esse processo de descrever a característica é chamado de **Descrição de Características**.
-
 Com essas descrições, podemos alinhar e combinar as imagens ou criar um modelo 3D.
 
 ## Conclusão
