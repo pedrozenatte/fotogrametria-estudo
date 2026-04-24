@@ -116,3 +116,8 @@ O que é uma matriz de homografia e como você pode usá-la?
 **12 - Estimativa da posição da câmera usando homografias**
 
 Implemente uma classe Python que estime a posição da câmera dada uma marca plana, usando homografias.
+
+
+#### Fonte 
+Todo o conteúdo da primeira parte está aqui: 
+Link: https://docs.opencv.org/3.4/db/d27/tutorial_py_table_of_contents_feature2d.html
