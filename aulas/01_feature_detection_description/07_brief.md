@@ -65,3 +65,6 @@ kp, des = brief.compute(img, kp)
 print(brief.descriptorSize())
 print(des.shape)
 ```
+
+#### Fonte: 
+Link: https://docs.opencv.org/3.4/dc/d7d/tutorial_py_brief.html

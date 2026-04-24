@@ -59,3 +59,6 @@ OBS:
 # Podemos fazer em uma linha:
 kp, des = orb.detectAndCompute(img, None)
 ```
+
+#### Fonte: 
+Link: https://docs.opencv.org/3.4/d1/d89/tutorial_py_orb.html

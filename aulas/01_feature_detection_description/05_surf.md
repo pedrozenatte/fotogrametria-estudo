@@ -94,3 +94,6 @@ surf.setExtended(True)
 kp, des = surf.detectAndCompute(img, None)
 print(des.shape)  # (N, 128)
 ```
+
+#### Fonte: 
+Link: https://docs.opencv.org/3.4/df/dd2/tutorial_py_surf_intro.html

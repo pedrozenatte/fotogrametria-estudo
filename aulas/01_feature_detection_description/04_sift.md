@@ -199,3 +199,6 @@ kp, des = sift.detectAndCompute(gray, None)
 ```
 
 Lembrando que cada keypoint vai ter uma posição (x, y), uma escala (blur), uma orientação (ângulo de acordo com o vetor gradiente) e a resposta.
+
+#### Fonte
+Link: https://docs.opencv.org/3.4/da/df5/tutorial_py_sift_intro.html

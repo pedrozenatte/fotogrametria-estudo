@@ -143,3 +143,6 @@ print("Total sem supressão:", len(kp))
 img3 = cv.drawKeypoints(img, kp, None, color=(255,0,0))
 cv.imwrite('fast_false.png', img3)
 ```
+
+#### Fonte: 
+Link: https://docs.opencv.org/3.4/df/d0c/tutorial_py_fast.html
