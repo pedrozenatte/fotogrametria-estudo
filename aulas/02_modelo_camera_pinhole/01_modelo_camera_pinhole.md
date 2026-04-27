@@ -247,3 +247,6 @@ $$
 **MESMO pixel**, sem profundidade. 
 
 OBS: Modelo completo no próximo tópico. 
+
+#### Fonte: 
+Essa pasta inteira está relacionada ao capítulo 4 do livro slambook. 
