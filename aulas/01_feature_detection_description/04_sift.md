@@ -202,3 +202,4 @@ Lembrando que cada keypoint vai ter uma posição (x, y), uma escala (blur), uma
 
 #### Fonte
 Link: https://docs.opencv.org/3.4/da/df5/tutorial_py_sift_intro.html
+https://www.youtube.com/watch?v=4AvTMVD9ig0&list=PLgnQpQtFTOGRYjqjdZxTEQPZuFHQa7O7Y&index=14

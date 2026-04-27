@@ -127,3 +127,4 @@ plt.show()
 
 #### Fonte: 
 Link: https://docs.opencv.org/3.4/d1/de0/tutorial_py_feature_homography.html
+https://www.youtube.com/watch?v=9D5rrtCC_E0&list=PLgnQpQtFTOGTPQhKBOGgjTgX-mzpsOGOX&index=8

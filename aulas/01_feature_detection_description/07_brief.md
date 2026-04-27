@@ -68,3 +68,4 @@ print(des.shape)
 
 #### Fonte: 
 Link: https://docs.opencv.org/3.4/dc/d7d/tutorial_py_brief.html
+https://www.youtube.com/watch?v=25GkgxClSaU&list=PLgnQpQtFTOGRYjqjdZxTEQPZuFHQa7O7Y&index=15
