@@ -196,7 +196,7 @@ $$
 **ATENÇÃO:** Essa matriz $K$ representa os parâmetros intrínsecos.
 
 **O que são os parâmetros intrínsecos?**
-São os parâmetros que descrevem como a câmera transforma luz em pixels internamente, isto é, definem a geometria interna da câmera (sensor + lente). 
+São os parâmetros que descrevem como a câmera transforma luz em pixels internamente (descrevem como um ponto no mundo 3D é mapeado para dentro da câmera em 2D), isto é, definem a geometria interna da câmera (sensor + lente). 
 Geralmente assume-se que esses parâmetros são fixos após a fabricação. Algumas câmeras fornecem esses valores,enquanto outras precisam ser calibradas (ex: método de Zhang).
 
 Além dos intrínsecos, podemos considerar parâmetros extrínsecos, que, no nosso caso, pode-se pensar em "onde a câmera está". 
@@ -250,3 +250,5 @@ OBS: Modelo completo no próximo tópico.
 
 #### Fonte: 
 Essa pasta inteira está relacionada ao capítulo 4 do livro slambook. 
+
+https://www.youtube.com/watch?v=ND2fa08vxkY&list=PLgnQpQtFTOGTPQhKBOGgjTgX-mzpsOGOX&index=10
