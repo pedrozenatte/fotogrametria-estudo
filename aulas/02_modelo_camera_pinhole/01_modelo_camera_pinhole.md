@@ -245,3 +245,5 @@ $$
 $$
 
 **MESMO pixel**, sem profundidade. 
+
+OBS: Modelo completo no próximo tópico. 
