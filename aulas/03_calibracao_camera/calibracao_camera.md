@@ -218,5 +218,10 @@ print("total error: {}".format(mean_error/len(objpoints)))
 
 #### Fonte
 Link: 
+https://docs.opencv.org/3.4/dc/dbb/tutorial_py_calibration.html
 
+https://www.youtube.com/watch?v=26nV4oDLiqc&list=PLgnQpQtFTOGTPQhKBOGgjTgX-mzpsOGOX&index=17
 https://www.youtube.com/watch?v=_-BTKiamRTg
+https://www.youtube.com/watch?v=Hz8kz5aeQ44
+
+https://programmer.group/opencv-notes-10-camera-model-and-calibration.html
