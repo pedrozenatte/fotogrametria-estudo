@@ -93,6 +93,8 @@ Cada match tem:
 ---
 
 **Exemplo com SIFT + Ratio Test**
+**OBS: Ratio Test é para remover matches ruins, mas só irá funcionar se crossCheck = False, uma vez que se usarmos o knnMatch, crossCheck precisa ser false**
+
 ```python
 import numpy as np
 import cv2 as cv
