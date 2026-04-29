@@ -132,6 +132,7 @@ plt.imshow(img3), plt.show()
 
 ### FLANN Matcher (Fast Library for Aprproximate Nearest Neighbors)
 Esse é mais rápido para grandes datasets e com descritores de alta dimensão. 
+O FLAAN é mais rápido porque utiliza métodos de busca aproximada de vizinhos mais próximos. Sendo assim, ao invés de comparar cada descritor com todos os outros descritores, como ocorre no método de força bruta, o FLANN utiliza algoritmos de busca otimizados, como ávores KD-Tree e algoritmos de clusterização hierárquica, o que o torna melhor para grandes conjuntos de dados. 
 
 #### Criando FLANN Matcher
 ```python
