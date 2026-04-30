@@ -37,7 +37,41 @@ class PinholeCamera:
         return pontos_2d
     
 
+    def unproject(self, image_pts_2d : np.ndarray) -> np.ndarray:
+        """
+        Pega pontos 2D da imagem e transformar em raios saindo da câmera
+
+        Basicamente vamos saber de onde veio a luz do pixel
+        """
+
+        # Garantindo que seja um array
+        image_pts_2d = np.asarray(image_pts_2d, dtype = np.float64)
+
+        # Transformando os pontos 2D em coordenadas homogêneas
+        u = image_pts_2d[:, 0]
+        v = image_pts_2d[:, 1]
+        
+        image_pts_2d = np.vstack((u, v, np.ones_like(u))) 
+        # OBS: ones_like é para garantir que o vetor de 1s terá o mesmo tamanho e formato do vetor u
+
+        # Aplicando a inversa da matriz K para gerar as direções da luz que fizeram os pixels na câmera
+        raios_camera_mundo = self.K_inv @ image_pts_2d
+
+        # Como perdemos a noção de profundidade, essa direção pode indicar infinitos valores, então vamos normalizar para lidar com valores pequenos
+        normas = np.linalg.norm(raios_camera_mundo, axis = 0)
+        raios_camera_mundo = raios_camera_mundo / normas
+
+        # Retorno em N x 3
+        return raios_camera_mundo.T
+    
+
+
+
+
+
 if __name__ == "__main__":
+
+    # Câmera
     K = np.array([
         [500,   0, 320],
         [  0, 500, 240],
@@ -56,7 +90,8 @@ if __name__ == "__main__":
         world_R_cam,
         world_t_cam
     )
-
+    
+    # Teste project
     pontos_3d = np.array([
     [0, 0, 5],
     [1, 0, 5],
@@ -65,7 +100,14 @@ if __name__ == "__main__":
     ], dtype=np.float64)
 
     pontos_2d = camera.project(pontos_3d)
-
+    print('Project')
     print(pontos_2d)
+    print()
 
-    
+    # Teste unproject
+    vetores_direcao = camera.unproject(pontos_2d)
+    print('Unproject')
+    print(vetores_direcao)
+
+
+
