@@ -155,6 +155,8 @@ for fname in glob.glob('left*.jpg'):
 
 cv.destroyAllWindows()
 ```
+**ATENÇÃO: A função PnP devolve a matriz de rotação em um formato diferente do habitual, então utiliza-se a função: R, jacobiano = cv.Rodrigues(rvec)**
+
 **OBS:** O desenho dos eixos é uma forma visual de validar o resultado. 
 Se tudo estiver correto:
 - os eixos ficam “presos” ao tabuleiro
