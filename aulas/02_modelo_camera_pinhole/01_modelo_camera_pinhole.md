@@ -225,6 +225,8 @@ Onde:
 - $t$: translação  
 - $T$: transformação completa  
 
+**OBS:** Quando aplicamos os parâmetros extrínsecos (a multiplicação mais interna) estamos colocando o ponto no referencial da câmera. 
+
 **Isso descreve a projeção de um ponto do mundo para pixels.**
 
 Os extrínsecos $(R, t)$ mudam conforme a posição/orientação da câmera e são justamente o que o SLAM estima.
