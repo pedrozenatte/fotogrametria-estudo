@@ -47,11 +47,9 @@ class Calibrador:
         """
         Carrega as imagens da pasta especificada
         """
-        imagens_jpg = glob.glob(os.path.join(self.caminho_pasta, "*.jpg"))
-        imagens_png = glob.glob(os.path.join(self.caminho_pasta, "*.png"))
         imagens_jpeg = glob.glob(os.path.join(self.caminho_pasta, "*.jpeg"))
 
-        return imagens_jpg + imagens_png + imagens_jpeg
+        return imagens_jpeg
     
 
     def detectar_cantos(self, mostrar_cantos_imagem = True):
@@ -74,10 +72,11 @@ class Calibrador:
                 print(f'Erro ao carregar a imagem: {nome_imagem}')
             
             cinza = cv.cvtColor(imagem, cv.COLOR_BGR2GRAY)
-            tamanho_imagem = cinza.shape[: : -1]
+            tamanho_imagem = cinza.shape[::-1]
 
             # Detectando cantos
-            flag, cantos = cv.findChessboardCorners(cinza, self.padrao_checkerboard, None)
+            flag, cantos = cv.findChessboardCorners(cinza, self.padrao_checkerboard, flags=cv.CALIB_CB_ADAPTIVE_THRESH + cv.CALIB_CB_FAST_CHECK)
+            # OBS: O parâmetro 'flags =...' é para melhorar a precisão, pois as fotos ficaram ruins
 
             if flag: 
                 self.objpoints.append(self.objp)
@@ -139,7 +138,7 @@ class Calibrador:
 
 
 if __name__ == '__main__':
-    calibrador = Calibrador(caminho_pasta = 'imagens_calibracao', padrao_checkerboard = (7, 7))
+    calibrador = Calibrador(caminho_pasta = 'ex10/imagens_calibracao_reais', padrao_checkerboard = (7, 7))
 
     K, dist_coef, erro = calibrador.calibrar(mostrar_imagem = True)
 
