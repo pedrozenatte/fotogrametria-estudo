@@ -140,6 +140,8 @@ print("Ponto 3D reconstruído:")
 print(points3d)
 ```
 
+**ATENÇÃO: A função cv.sfm.triangulatePoints depende da extensão sfm, mas o opencv deixa uma como cv.triangulatePoints(P1, P2, pts_cam1.T, pts_cam2.T)**
+
 
 #### Fonte:
 Assistir o vídeo: https://www.youtube.com/watch?v=UZlRhEUWSas&list=PLgnQpQtFTOGTPQhKBOGgjTgX-mzpsOGOX&index=26
